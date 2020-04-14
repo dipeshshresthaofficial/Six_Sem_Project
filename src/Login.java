@@ -74,9 +74,29 @@ public class Login {
 			"jdbc:sqlite:./Database/lowes.db");  
 			//here dipesh is database name, root is username and password  
 			Statement stmt=con.createStatement();  
-//			ResultSet rs1=stmt.executeQuery("create table if not exists customer(C_id varchar(20) PRIMARY KEY NOT NULL, F_name varchar(20) NOT NULL,L_name varchar(20) NOT NULL,Mobile varchar(10) NOT NULL, Email varchar(30), Dob date, Pincode INTEGER, Address varchar(20))");
-//			ResultSet rs2=stmt.executeQuery("create table if not exists transaction_record(T_id INTEGER PRIMARY KEY AUTOINCREMENT, T_time time NOT NULL, T_Amount INTEGER NOT NULL, Cust_id varchar(20), CONSTRAINT FK1 FOREIGN KEY (Cust_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)");
-			ResultSet rs3=stmt.executeQuery("create table if not exists card_details(Card_id INTEGER PRIMARY KEY AUTOINCREMENT, Card_no varchar(2000) NOT NULL UNIQUE, Exp_date varchar(2000) NOT NULL, Cvv varchar(2000) NOT NULL,Cust_id varchar(20), CONSTRAINT FK2 FOREIGN KEY (Cust_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)"); 
+			
+				String s1 = "create table if not exists customer(C_id varchar(20) PRIMARY KEY NOT NULL, F_name varchar(20) NOT NULL,L_name varchar(20) NOT NULL,Mobile varchar(10) NOT NULL, Email varchar(30), Dob date, Pincode INTEGER, Address varchar(20))";
+			
+			
+				String s2 = "create table if not exists card_type(id TEXT PRIMARY KEY NOT NULL, card_type TEXT UNIQUE NOT NULL)";
+			
+			
+				String s3 = "create table if not exists card_details(id INTEGER PRIMARY KEY AUTOINCREMENT, Card_no BLOB NOT NULL UNIQUE, Exp_date BLOB NOT NULL, Cvv BLOB NOT NULL,Cust_id varchar(20), Card_type_id TEXT, CONSTRAINT FK2 FOREIGN KEY (Cust_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT FK3 FOREIGN KEY (Card_type_id) references card_type (id) ON DELETE CASCADE ON UPDATE CASCADE)";
+			
+			
+				String s4 = "create table if not exists orders(Order_no TEXT PRIMARY KEY NOT NULL, Item_id TEXT UNIQUE, Item_name TEXT, Qty INEGER, Price INTEGER, Customer_id varchar(20), CONSTRAINT FK4 FOREIGN KEY (Customer_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)";
+			
+			
+				String s5 = "create table if not exists transaction_record(T_id TEXT PRIMARY KEY NOT NULL, T_amount INTEGER, Payment_mode TEXT, T_date TEXT, T_time TEXT, Status TEXT, O_no TEXT, CONSTRAINT FK5 FOREIGN KEY (O_no) references orders (Order_no) ON DELETE CASCADE ON UPDATE CASCADE)";
+				
+				stmt.executeUpdate(s1);
+				stmt.executeUpdate(s2);
+				stmt.executeUpdate(s3);
+				stmt.executeUpdate(s4);
+				stmt.executeUpdate(s5);
+				
+			
+				
 			
 			con.close();  
 			}catch(Exception e){ System.out.println(e);}  

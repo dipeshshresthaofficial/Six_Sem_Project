@@ -21,6 +21,7 @@ import java.awt.event.FocusEvent;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.security.Signature;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,13 +39,15 @@ public class Checkout {
 	private JTextField expDateField;
 	private JTextField cvvField;
 	String cardNo="",cardExpDate="",cardCvv="";
+	String[] cardDetailsArr= new String[3];
+	String[] encryptedCardDetailsFromDbArr= new String[3];
 	
 	PreparedStatement prepStmt=null; //This is for using bind variable concept for accessing values from database
 	
 //	cypher declaration
 	 byte[] cipherText;
-	 String[] encryptedTextArr;
-	 String[] decryptedTextArr;
+	 String[] encryptedTextArr= new String[3];
+	 String[] decryptedTextArr= new String[3];
 
 	/**
 	 * Launch the application.
@@ -167,7 +170,7 @@ public class Checkout {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
-				String[] cardDetailsArr= {};
+				
 				cardDetailsArr[0]= cardNo;
 				cardDetailsArr[1]= cardExpDate;
 				cardDetailsArr[2]= cardCvv;
@@ -178,32 +181,48 @@ public class Checkout {
 					System.out.println(cardDetailsArr[i]);
 					try {
 						encryptedTextArr[i]= encrypt(cardDetailsArr[i]);
-					} catch (Exception e1) {
+					} 
+					catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					
 				}
+				
+				cardNoField.setText(encryptedTextArr[0]);
+				expDateField.setText(encryptedTextArr[1]);
+				cvvField.setText(encryptedTextArr[2]);
+				
+				//inserting encrypted data into the database
+				
+				try{  
 					
-					try {
-						
-						
-						Class.forName("org.sqlite.JDBC");  
-						Connection con=DriverManager.getConnection( 
-						"jdbc:sqlite:./Database/lowes.db");  
-						//here dipesh is database name, root is username and password  
-						Statement stmt=con.createStatement();  
-						//ResultSet rs1=stmt.executeQuery("create table if not exists customer(F_name varchar(20),L_name varchar(20),Mobile varchar(10))");  
-						
-											
-						ResultSet rs=stmt.executeQuery("insert into card_details (Card_no,Exp_date,Cvv,Cust_id) values('"+encryptedTextArr[0]+"','"+encryptedTextArr[1]+"','"+encryptedTextArr[2]+"','"+username+"')");
-//						while(rs.next())  
-//						System.out.println(rs.getInt(1)+"  "+rs.getString(2));  
-						con.close();  
-					} catch (Exception e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+					String a= encryptedTextArr[0];
+					String b= encryptedTextArr[1];
+					String c= encryptedTextArr[2];
+					Class.forName("org.sqlite.JDBC");  
+					Connection con=DriverManager.getConnection( 
+					"jdbc:sqlite:./Database/lowes.db");  
+					Statement stmt=con.createStatement();  
+					
+					String rs="insert into card_details (Card_no,Exp_date,Cvv,Cust_id) values(?,?,?,?)";
+					
+					prepStmt= con.prepareStatement(rs);
+					prepStmt.setString(1,a);
+					prepStmt.setString(2, b);
+					prepStmt.setString(3, c);
+					prepStmt.setString(4, username);
+					prepStmt.executeUpdate();
+					
+					con.close();  
 					}
+				catch(Exception e1)
+				{ 
+					System.out.println(e1);
+				}  
+					
+					
+				
 					
 				
 			}
@@ -242,109 +261,119 @@ public class Checkout {
 				
 				
 			}
+			
 		});
 		encryptBtn.setBounds(39, 206, 118, 35);
 		frame.getContentPane().add(encryptBtn);
 		
-// Decrypt Function
-		JButton decryptBtn = new JButton("Decrypt");
-		decryptBtn.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				
-				String[] encryptedCardDetailsFromDbArr= {};
-
-					try {
-												
-						Class.forName("org.sqlite.JDBC");  
-						Connection con=DriverManager.getConnection( 
-						"jdbc:sqlite:./Database/lowes.db");  
-						//here dipesh is database name, root is username and password  
-						Statement stmt=con.createStatement();  
-						//ResultSet rs1=stmt.executeQuery("create table if not exists customer(F_name varchar(20),L_name varchar(20),Mobile varchar(10))");  
-						
-											
-						String select="select Card_no,Exp_date,Cvv from card_details where Cust_id=?";
-						prepStmt = con.prepareStatement(select);
-						prepStmt.setString(1,username);
-						ResultSet rs2=prepStmt.executeQuery();
-						
-//Retrived database values are put into the variables and displaying				
-						while(rs2.next())
-						{
-							encryptedCardDetailsFromDbArr[0]=rs2.getString("Card_no");
-							encryptedCardDetailsFromDbArr[1]=rs2.getString("Exp_date");
-							encryptedCardDetailsFromDbArr[2]=rs2.getString("Cvv");
-						}
-						con.close();  
-					} catch (Exception e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-
-			
-			
-			for(int i=0;i<3;i++) {
-				
-				try {
-						decryptedTextArr[i]= decrypt(encryptedCardDetailsFromDbArr[i]);
-					} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-					
-					}
-				
-				}
-			
-			cardNoField.setText(decryptedTextArr[0]);
-			expDateField.setText(decryptedTextArr[1]);
-			cvvField.setText(decryptedTextArr[2]);
-			
-			}
-
-			private String decrypt(String string) throws Exception {
-				// TODO Auto-generated method stub
-				
-				//Creating a Signature object
-		          Signature sign = Signature.getInstance("SHA256withRSA");
-		         
-		          //Creating KeyPair generator object
-		          KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
-		         
-		          //Initializing the key pair generator
-		          keyPairGen.initialize(2048);
-		         
-		          //Generating the pair of keys
-		          KeyPair pair = keyPairGen.generateKeyPair();      
-		       
-		          //Creating a Cipher object
-		          Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-		           
-		          //Initializing a Cipher object
-		          cipher.init(Cipher.ENCRYPT_MODE, pair.getPublic());
-		         
-//		          //Adding data to the cipher
-//		          byte[] input = string.getBytes();    
-//		          cipher.update(input);
-		         
-//		          //encrypting the data
-//		          cipherText = cipher.doFinal(); 
-////		   		Displaying the encrypted form of data
-//		          System.out.println(new String(cipherText,"UTF8"));
-				
-				
-				System.out.println("Decripting..."+pair.getPrivate());
-	              PrivateKey  key1=pair.getPrivate();
-	              cipher.init(Cipher.DECRYPT_MODE, key1);
-	              byte[] dec = cipher.doFinal(cipherText);
-//	              Displaying the contents after decrypting the encrypted data 
-	              System.out.println(new String(dec));
-	             
-	              return (new String(dec));
-			}
-		});
-		decryptBtn.setBounds(427, 208, 118, 35);
-		frame.getContentPane().add(decryptBtn);
 		
+		
+		// Decrypt Function
+//				JButton decryptBtn = new JButton("Decrypt");
+//				decryptBtn.addMouseListener(new MouseAdapter() {
+//					@Override
+//					public void mouseClicked(MouseEvent e) {
+//						
+//						
+//
+//							try {
+//														
+//								Class.forName("org.sqlite.JDBC");  
+//								Connection con=DriverManager.getConnection( 
+//								"jdbc:sqlite:./Database/lowes.db");  
+//								//here dipesh is database name, root is username and password  
+//								Statement stmt=con.createStatement();  
+//								//ResultSet rs1=stmt.executeQuery("create table if not exists customer(F_name varchar(20),L_name varchar(20),Mobile varchar(10))");  
+//								
+//													
+//								String select="select Card_no,Exp_date,Cvv from card_details where Cust_id=?";
+//								prepStmt = con.prepareStatement(select);
+//								prepStmt.setString(1,username);
+//								ResultSet rs2=prepStmt.executeQuery();
+//								
+//		//Retrived database values are put into the variables and displaying				
+//								while(rs2.next())
+//								{
+//									encryptedCardDetailsFromDbArr[0]=rs2.getString("Card_no");
+//									encryptedCardDetailsFromDbArr[1]=rs2.getString("Exp_date");
+//									encryptedCardDetailsFromDbArr[2]=rs2.getString("Cvv");
+//								}
+//								con.close();  
+//							} catch (Exception e1) {
+//								// TODO Auto-generated catch block
+//								e1.printStackTrace();
+//							}
+//
+//					
+//					
+//					for(int i=0;i<3;i++) {
+//						
+//						try {
+//								decryptedTextArr[i]= decrypt(encryptedCardDetailsFromDbArr[i]).toString();
+//							} catch (Exception e1) {
+//							// TODO Auto-generated catch block
+//							e1.printStackTrace();
+//							
+//							}
+//						
+//						}
+//					
+//					cardNoField.setText(decryptedTextArr[0]);
+//					expDateField.setText(decryptedTextArr[1]);
+//					cvvField.setText(decryptedTextArr[2]);
+//					
+//					}
+//
+//					private String decrypt(String string) throws Exception {
+//						// TODO Auto-generated method stub
+//						
+//								
+//						//Creating a Signature object
+//					    Signature sign = Signature.getInstance("SHA256withRSA");
+//					    
+//				        //Creating KeyPair generator object
+//				          KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
+//				         
+//				        //Initializing the KeyPairGenerator
+//				          keyPairGen.initialize(2048);
+//				         
+//				        //Generate the pair of keys
+//				          KeyPair pair = keyPairGen.generateKeyPair();      
+//				          
+//				        //Getting the public key from the key pair
+//				          PublicKey publicKey = pair.getPublic();
+//				       
+//				        //Creating a Cipher object
+//				          Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+//				          
+//				        //Initializing the same cipher for decryption
+//				          cipher.init(Cipher.DECRYPT_MODE, pair.getPrivate());
+//				     
+////				          byte[] b = string.getBytes();
+//				           
+//				          
+//				        //Decrypting the text
+//				          byte[] decipheredText = cipher.doFinal(string.getBytes());
+//				          
+//				          System.out.println(new String(decipheredText));
+//				          
+////				          System.out.println("\n\n");
+//////				   		Displaying the encrypted form of data
+////				          System.out.println(new String(b,"UTF8"));
+////						
+////						
+////						System.out.println("\nDecripting..."+pair.getPrivate());
+//////			              PrivateKey  key1=pair.getPrivate();
+////			              cipher.init(Cipher.DECRYPT_MODE, pair.getPrivate());
+////			              
+////			              byte[] dec = cipher.doFinal(b);
+//////			              Displaying the contents after decrypting the encrypted data 
+////			              System.out.println(new String(dec));
+//			             
+//			              return (new String(decipheredText));
+//					}
+//				});
+//				decryptBtn.setBounds(427, 208, 118, 35);
+//				frame.getContentPane().add(decryptBtn);
 	}
 }

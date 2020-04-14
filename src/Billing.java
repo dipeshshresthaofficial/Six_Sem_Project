@@ -11,6 +11,12 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.util.Calendar;
+import java.util.Random;
 
 public class Billing {
 	
@@ -20,12 +26,15 @@ public class Billing {
 	/**
 	 * Launch the application.
 	 * @param a2 
+	 * @param itemPrice 
+	 * @param itemName 
+	 * @param itemId 
 	 */
-	public static void main(String[] a2, int[] a) {
+	public static void main(String[] a2, String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Billing window = new Billing(a2,a);
+					Billing window = new Billing(a2,itemId,itemName,itemQty,itemPrice);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,9 +46,55 @@ public class Billing {
 	/**
 	 * Create the application.
 	 * @param a2 
+	 * @param itemPrice 
+	 * @param itemName 
+	 * @param itemId 
 	 */
-	public Billing(String[] a2, int[] a) {
-		initialize(a2,a);
+	public Billing(String[] a2, String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
+		
+		storeOrder(itemId,itemName,itemQty,itemPrice);
+		initialize(a2,itemPrice);
+	}
+
+	private void storeOrder(String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
+		// TODO Auto-generated method stub
+		PreparedStatement prepStmt=null;
+		
+		try{  
+			Class.forName("org.sqlite.JDBC");  
+			Connection con=DriverManager.getConnection( 
+			"jdbc:sqlite:./Database/lowes.db");  
+			Statement stmt=con.createStatement();  
+			
+//			generating unique order id
+			
+			String[] months = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+			Calendar gc = Calendar.getInstance();
+			
+			Random rn = new Random();
+						
+			String orderId= Integer.toString(rn.nextInt(10))+gc.get(Calendar.YEAR)+months[gc.get(Calendar.MONTH)]+gc.get(Calendar.DATE)+gc.get(Calendar.HOUR)+gc.get(Calendar.MINUTE)+gc.get(Calendar.SECOND);
+			
+//			Ended generation of order id
+			
+				for(int x=0;x< itemId.length;x++) {
+					
+					prepStmt = con.prepareStatement("Insert into orders values(?,?,?,?,?,?)");
+					prepStmt.setString(1, orderId);
+					prepStmt.setString(2, itemId[x]);
+					prepStmt.setString(3, itemName[x]);
+					prepStmt.setInt(4, itemQty[x]);
+					prepStmt.setInt(5, itemPrice[x]);
+					
+					
+//					prepStmt.setString(6, x);
+				}
+			
+				
+			
+			con.close();  
+			}catch(Exception e){ System.out.println(e);}
+		
 	}
 
 	/**

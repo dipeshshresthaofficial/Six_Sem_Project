@@ -142,8 +142,11 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
 
     	int count=0;
     	int i=0;
-    	String a[]=new String[100];//declaration and instantiation 
-    	int itemPrice[]=new int[100];
+    	String a[]=new String[15];//declaration and instantiation 
+    	int itemPrice[]=new int[15];
+    	String itemId[] = new String[15];
+    	String itemName[]= new String[15];
+    	int itemQty[] = new int[15];
     	
     	long t= System.currentTimeMillis();
     	long end = t+15000L;
@@ -184,11 +187,38 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
                 
                 
                 String[] arr= item.split(":", 0);
-                String temp= arr[arr.length-1];
                 
+                String temp= arr[arr.length-1];                
                 int temp1=Integer.parseInt(temp);
-                itemPrice[i]=temp1;
                 
+                for(int x=0;x<itemId.length;x++) {
+                	
+                	if(arr[0].equalsIgnoreCase(itemId[x])) {
+                		
+                		count++;
+                		itemQty[x]++;
+                		itemPrice[x]+=temp1;
+                		break;
+                		
+                	}
+                }
+                
+                if(count==0) {
+                	
+                	itemId[i] = arr[0];
+                    itemName[i] = arr[1];
+                                       
+                    itemPrice[i]=temp1;
+                	
+                }
+                else {
+                	
+                	count=0;
+                }
+                
+                
+                
+                                
                 i++;
                 //conversion from string to integer
 //              	int text = Integer.parseInt(result.getText());
@@ -213,8 +243,8 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
             	        
         } while (System.currentTimeMillis() < end);
     	
-        	Billing b1=new Billing(a,itemPrice);
-        	b1.main(a,itemPrice); 
+        	Billing b1=new Billing(a,itemId,itemName,itemQty,itemPrice);
+        	b1.main(a,itemId,itemName,itemQty,itemPrice); 
         	
     	
     }
