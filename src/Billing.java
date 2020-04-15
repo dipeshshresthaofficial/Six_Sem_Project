@@ -7,13 +7,19 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Font;
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.URI;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Calendar;
 import java.util.Random;
@@ -22,6 +28,7 @@ public class Billing {
 	
 	private JFrame frame;
 	int sum=0;
+	String fixedOrderId = "";
 	private JTextField billAmountField;
 	/**
 	 * Launch the application.
@@ -52,13 +59,37 @@ public class Billing {
 	 */
 	public Billing(String[] a2, String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		
-		storeOrder(itemId,itemName,itemQty,itemPrice);
-		initialize(a2,itemPrice);
+		
+		initialize(a2,itemId,itemName,itemQty,itemPrice);
+		
+		
 	}
 
 	private void storeOrder(String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		// TODO Auto-generated method stub
 		PreparedStatement prepStmt=null;
+		String cId = "";
+		
+		
+		System.out.println("=======================================================================================");
+		System.out.println("=======================================================================================");
+		System.out.println("=======================================================================================");
+		System.out.println("=======================================================================================");
+		
+		System.out.println(itemId[0]);
+		System.out.println(itemName[0]);
+		System.out.println(itemQty[0]);
+		System.out.println(itemPrice[0]);
+		
+		System.out.println(itemId[1]);
+		System.out.println(itemName[1]);
+		System.out.println(itemQty[1]);
+		System.out.println(itemPrice[1]);
+		
+		System.out.println(itemId[2]);
+		System.out.println(itemName[2]);
+		System.out.println(itemQty[2]);
+		System.out.println(itemPrice[2]);
 		
 		try{  
 			Class.forName("org.sqlite.JDBC");  
@@ -66,33 +97,59 @@ public class Billing {
 			"jdbc:sqlite:./Database/lowes.db");  
 			Statement stmt=con.createStatement();  
 			
+			String select="select C_id from customer where Status=?";
+			prepStmt = con.prepareStatement(select);
+			prepStmt.setString(1,"active");
+			ResultSet rs2=prepStmt.executeQuery();
+			
+			
+		
+//Retrived database values are put into the variables and displaying				
+			while(rs2.next())
+			{
+				cId=rs2.getString("C_id").toString();
+				
+				System.out.println("C_ID: "+cId);
+			}
+			
+			
 //			generating unique order id
 			
 			String[] months = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
 			Calendar gc = Calendar.getInstance();
-			
-			Random rn = new Random();
 						
-			String orderId= Integer.toString(rn.nextInt(10))+gc.get(Calendar.YEAR)+months[gc.get(Calendar.MONTH)]+gc.get(Calendar.DATE)+gc.get(Calendar.HOUR)+gc.get(Calendar.MINUTE)+gc.get(Calendar.SECOND);
-			
+			String orderId= gc.get(Calendar.YEAR)+months[gc.get(Calendar.MONTH)]+gc.get(Calendar.DATE)+gc.get(Calendar.HOUR)+gc.get(Calendar.MINUTE)+gc.get(Calendar.SECOND);
+			fixedOrderId = orderId.toString();
 //			Ended generation of order id
 			
 				for(int x=0;x< itemId.length;x++) {
 					
-					prepStmt = con.prepareStatement("Insert into orders values(?,?,?,?,?,?)");
-					prepStmt.setString(1, orderId);
+					prepStmt = con.prepareStatement("Insert into orders(Order_no,Item_id,Item_name,Qty,Price,Customer_id) values(?,?,?,?,?,?)");
+					prepStmt.setString(1, fixedOrderId);
 					prepStmt.setString(2, itemId[x]);
 					prepStmt.setString(3, itemName[x]);
 					prepStmt.setInt(4, itemQty[x]);
 					prepStmt.setInt(5, itemPrice[x]);
+					prepStmt.setString(6, cId);
+					
+					prepStmt.executeUpdate();
+					
+//				This if condition is for: since we did aloocate size of itemId[15] as 15 so this loop runs for 15 times but we want it to run till all items are processed.
+					if(itemId[x+1]==null) {
+						
+						con.close();
+						break;
+					}
 					
 					
 //					prepStmt.setString(6, x);
 				}
+				
+				
 			
 				
 			
-			con.close();  
+			  
 			}catch(Exception e){ System.out.println(e);}
 		
 	}
@@ -101,10 +158,10 @@ public class Billing {
 	 * Initialize the contents of the frame.
 	 * @param a2 
 	 */
-	private void initialize(String[] a2, int[] a	) {
+	private void initialize(String[] a2,String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		
 		frame = new JFrame();
-		frame.setBounds(100, 100, 534, 466);
+		frame.setBounds(100, 100, 534, 508);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -130,7 +187,7 @@ public class Billing {
 			
 //			String str1 = Integer.toString(a2[i]);
 			itemList.append(a2[i]+"\n");
-			sum += a[i];
+			sum += itemPrice[i];
 		}
 		
 		
@@ -142,16 +199,44 @@ public class Billing {
 		System.out.println("Total:"+sum);
 		billAmountField.setText(Integer.toString(sum));
 		
-		JButton checkOutBtn = new JButton("Check Out");
+		JButton checkOutBtn = new JButton("Card Payment");
+		checkOutBtn.setForeground(Color.BLACK);
+		checkOutBtn.setFont(new Font("Tahoma", Font.BOLD, 18));
 		checkOutBtn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
-				Checkout c1= new Checkout("billCard",sum);
-				c1.main("billCard",sum);
+				System.out.println(fixedOrderId);
+				storeOrder(itemId,itemName,itemQty,itemPrice);
+				
+				Checkout c1= new Checkout("billCard",sum, fixedOrderId);
+				c1.main("billCard",sum, fixedOrderId);
 			}
 		});
-		checkOutBtn.setBounds(147, 393, 163, 23);
+		checkOutBtn.setBounds(80, 406, 163, 38);
 		frame.getContentPane().add(checkOutBtn);
+		
+		
+		
+		JLabel paytmLogoLabel = new JLabel("");
+		paytmLogoLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				try {
+					  Desktop desktop = java.awt.Desktop.getDesktop();
+					  URI oURL = new URI("http://rknepal/");
+					  desktop.browse(oURL);
+					} catch (Exception e1) {
+					  e1.printStackTrace();
+					}
+			}
+		});
+		paytmLogoLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		Image img = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
+		Image modifiedImg = img.getScaledInstance(200, 220, java.awt.Image.SCALE_SMOOTH);
+		paytmLogoLabel.setIcon(new ImageIcon(modifiedImg));
+		paytmLogoLabel.setBounds(321, 375, 163, 83);
+		frame.getContentPane().add(paytmLogoLabel);
 	}
 }

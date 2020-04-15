@@ -208,7 +208,7 @@ public class NewCustomer {
 					//ResultSet rs1=stmt.executeQuery("create table if not exists customer(F_name varchar(20),L_name varchar(20),Mobile varchar(10))");  
 					
 										
-					ResultSet rs=stmt.executeQuery("insert into customer values('"+custUsername+"','"+custFname+"','"+custLname+"','"+mobileEntered+"','"+custEmail+"','"+custDob+"','"+custPincode+"','"+custAddress+"')");
+					ResultSet rs=stmt.executeQuery("insert into customer values('"+custUsername+"','"+custFname+"','"+custLname+"','"+mobileEntered+"','"+custEmail+"','"+custDob+"','"+custPincode+"','"+custAddress+"',\"inactive\")");
 //					while(rs.next())  
 //					System.out.println(rs.getInt(1)+"  "+rs.getString(2));  
 					con.close();  

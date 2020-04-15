@@ -9,7 +9,7 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
 public class QRCodeGenerator {
-    private static final String QR_CODE_IMAGE_PATH = "./QRcodes/WaterPipe.png";
+    private static final String QR_CODE_IMAGE_PATH = "./QRcodes/WashingMachine.png";
 
     private static void generateQRCodeImage(String text, int width, int height, String filePath)
             throws WriterException, IOException {
@@ -22,7 +22,7 @@ public class QRCodeGenerator {
 
     public static void main(String[] args) {
         try {
-            generateQRCodeImage("Water Pipe:800", 350, 350, QR_CODE_IMAGE_PATH);
+            generateQRCodeImage("ELE0001:Washing Machine:20000", 350, 350, QR_CODE_IMAGE_PATH);
         } catch (WriterException e) {
             System.out.println("Could not generate QR Code, WriterException :: " + e.getMessage());
         } catch (IOException e) {

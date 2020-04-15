@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.EventQueue;
 import java.awt.Image;
 
@@ -12,13 +13,14 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.URI;
 import java.time.LocalTime;
 
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 
-public class Home {
+public class Homes {
 
 	private JFrame frame;
 
@@ -29,7 +31,7 @@ public class Home {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Home window = new Home(username,dbFname);
+					Homes window = new Homes(username,dbFname);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +45,7 @@ public class Home {
 	 * @param dbFname 
 	 * @param username 
 	 */
-	public Home(String username, String dbFname) {
+	public Homes(String username, String dbFname) {
 		initialize(username,dbFname);
 	}
 
@@ -56,11 +58,11 @@ public class Home {
 	 */
 	private void initialize(String username, String dbFname) {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 540, 410);
+		frame.setBounds(100, 100, 504, 502);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		Icon icon =new ImageIcon(".image/lowes.png");
+//		Icon icon =new ImageIcon(".image/lowes.png");
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBounds(0, 0, 152, 34);
@@ -87,7 +89,7 @@ public class Home {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
-				Menu m2 = new Menu();
+				Dashboard m2 = new Dashboard();
 				m2.main(null);
 			}
 		});
@@ -101,9 +103,8 @@ public class Home {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				
-//				The third parameter is left blank as while Checking out after billing i sent ORDERID but for adding card its not required
-				Checkout c1 = new Checkout(username,0,"");
-				c1.main(username,0,"");
+				Checkout c1 = new Checkout(username,0, dbFname);
+				c1.main(username,0,dbFname);
 			}
 		});
 		addMenu.add(cardPaymentMenuItem);
@@ -120,8 +121,32 @@ public class Home {
 				System.out.println("HEllo");
 			}
 		});
-		profileLabelBtn.setBounds(235, 90, 64, 64);
+		profileLabelBtn.setBounds(209, 111, 64, 64);
 		frame.getContentPane().add(profileLabelBtn);
+		
+		JLabel paytmLabel = new JLabel("");
+		paytmLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				try {
+					  Desktop desktop = java.awt.Desktop.getDesktop();
+					  URI oURL = new URI("http://rknepal/");
+					  desktop.browse(oURL);
+					} catch (Exception e1) {
+					  e1.printStackTrace();
+					}
+			}
+		});
+		paytmLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		Image img1 = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
+		Image modifiedImg1 = img1.getScaledInstance(200, 220, java.awt.Image.SCALE_SMOOTH);
+		paytmLabel.setIcon(new ImageIcon(modifiedImg1));
+		paytmLabel.setBounds(162, 239, 180, 87);
+		frame.getContentPane().add(paytmLabel);
+		
+		
 		
 		
 		
@@ -156,9 +181,8 @@ public class Home {
 		}
 		
 		
+	
+		
+		
 	}
-
-	
-
-	
 }

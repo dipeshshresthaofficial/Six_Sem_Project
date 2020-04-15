@@ -66,7 +66,7 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -198,6 +198,7 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
                 		count++;
                 		itemQty[x]++;
                 		itemPrice[x]+=temp1;
+                		i--;
                 		break;
                 		
                 	}
@@ -207,7 +208,7 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
                 	
                 	itemId[i] = arr[0];
                     itemName[i] = arr[1];
-                                       
+                    itemQty[i]+=1;                
                     itemPrice[i]=temp1;
                 	
                 }
@@ -242,6 +243,21 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
            
             	        
         } while (System.currentTimeMillis() < end);
+    	
+    		System.out.println(itemId[0]);
+    		System.out.println(itemName[0]);
+    		System.out.println(itemQty[0]);
+    		System.out.println(itemPrice[0]);
+
+    		System.out.println(itemId[1]);
+    		System.out.println(itemName[1]);
+    		System.out.println(itemQty[1]);
+    		System.out.println(itemPrice[1]);
+    		
+    		System.out.println(itemId[2]);
+    		System.out.println(itemName[2]);
+    		System.out.println(itemQty[2]);
+    		System.out.println(itemPrice[2]);
     	
         	Billing b1=new Billing(a,itemId,itemName,itemQty,itemPrice);
         	b1.main(a,itemId,itemName,itemQty,itemPrice); 

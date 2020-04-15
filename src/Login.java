@@ -84,10 +84,10 @@ public class Login {
 				String s3 = "create table if not exists card_details(id INTEGER PRIMARY KEY AUTOINCREMENT, Card_no BLOB NOT NULL UNIQUE, Exp_date BLOB NOT NULL, Cvv BLOB NOT NULL,Cust_id varchar(20), Card_type_id TEXT, CONSTRAINT FK2 FOREIGN KEY (Cust_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT FK3 FOREIGN KEY (Card_type_id) references card_type (id) ON DELETE CASCADE ON UPDATE CASCADE)";
 			
 			
-				String s4 = "create table if not exists orders(Order_no TEXT PRIMARY KEY NOT NULL, Item_id TEXT UNIQUE, Item_name TEXT, Qty INEGER, Price INTEGER, Customer_id varchar(20), CONSTRAINT FK4 FOREIGN KEY (Customer_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)";
+				String s4 = "create table if not exists orders(Order_id INTEGER PRIMARY KEY AUTOINCREMENT, Order_no TEXT NOT NULL, Item_id TEXT, Item_name TEXT, Qty INEGER, Price INTEGER, Customer_id varchar(20), CONSTRAINT FK4 FOREIGN KEY (Customer_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)";
 			
 			
-				String s5 = "create table if not exists transaction_record(T_id TEXT PRIMARY KEY NOT NULL, T_amount INTEGER, Payment_mode TEXT, T_date TEXT, T_time TEXT, Status TEXT, O_no TEXT, CONSTRAINT FK5 FOREIGN KEY (O_no) references orders (Order_no) ON DELETE CASCADE ON UPDATE CASCADE)";
+				String s5 = "create table if not exists transaction_record(T_id TEXT PRIMARY KEY NOT NULL, T_amount INTEGER, Payment_mode TEXT, T_date TEXT, T_time TEXT, Status TEXT, Order_no TEXT, Customer_id TEXT, CONSTRAINT FK5 FOREIGN KEY (Customer_id) references customer (C_id) ON DELETE CASCADE ON UPDATE CASCADE)";
 				
 				stmt.executeUpdate(s1);
 				stmt.executeUpdate(s2);
@@ -157,6 +157,8 @@ public class Login {
 						prepStmt.setString(1,mobileEntered);
 						ResultSet rs2=prepStmt.executeQuery();
 						
+						
+					
 //Retrived database values are put into the variables and displaying				
 						while(rs2.next())
 						{
@@ -167,15 +169,39 @@ public class Login {
 							System.out.println(dbMobileNo);
 							System.out.println(dbFname+" "+lname+"  "+dbMobileNo);
 						}
-							  
+						
+						
+							  						
 						con.close();  
 						}catch(Exception e1){ System.out.println(e1);}  
 					
 					if(mobileEntered.matches(dbMobileNo)) {
 //						JOptionPane.showMessageDialog(null, "Correct Password..");
+						try {
+							
+							Class.forName("org.sqlite.JDBC");  
+							Connection con=DriverManager.getConnection( 
+							"jdbc:sqlite:./Database/lowes.db"); 
+							Statement stmt=con.createStatement();
+							
+							String activeUser = "Update customer set Status=? where Mobile=?";
+							prepStmt = con.prepareStatement(activeUser);
+							prepStmt.setString(1, "active");
+							prepStmt.setString(2,mobileEntered);
+							
+							int i= prepStmt.executeUpdate();
+							System.out.println(i+"record(s) updated");
+							
+							
+							
+							con.close();
+						}catch(Exception e1) {
+							
+							System.out.println(e);
+						}
 						
 						frame.dispose();
-						Home h1= new Home(username,dbFname);
+						Homes h1= new Homes(username,dbFname);
 						h1.main(username,dbFname);
 					}
 					else {

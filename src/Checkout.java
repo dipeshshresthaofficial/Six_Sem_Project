@@ -28,6 +28,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Calendar;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -53,11 +54,11 @@ public class Checkout {
 	 * Launch the application.
 	 * @param string 
 	 */
-	public static void main(String username, int total) {
+	public static void main(String username, int total, String orderId) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Checkout window = new Checkout(username,total);
+					Checkout window = new Checkout(username,total, orderId);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -70,17 +71,19 @@ public class Checkout {
 	 * Create the application.
 	 * @param string 
 	 * @param total 
+	 * @param fixedOrderId 
 	 */
-	public Checkout(String username, int total) {
-		initialize(username,total);
+	public Checkout(String username, int total, String orderNo) {
+		initialize(username,total,orderNo);
 	}
 
 	/**
 	 * Initialize the contents of the frame.
 	 * @param string 
 	 * @param total 
+	 * @param orderId 
 	 */
-	private void initialize(String username, int total) {
+	private void initialize(String username, int total, String orderNo) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 605, 379);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -153,7 +156,77 @@ public class Checkout {
 						e1.printStackTrace();
 					}
 					
-					JOptionPane.showMessageDialog(null, "Payment of " + total + " Successful. Thank You!");				
+					JOptionPane.showMessageDialog(null, "Payment of " + total + " Successful for ORDER ID: "+orderNo+". Thank You!");		
+					
+					Calendar c = Calendar.getInstance();
+					
+					String date = c.get(Calendar.YEAR)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.DATE);
+					String time = c.get(Calendar.HOUR)+":"+c.get(Calendar.MINUTE)+":"+c.get(Calendar.SECOND);
+					storeTransaction(total,"card", date, time,"success", orderNo);
+				
+			}
+
+			private void storeTransaction(int total, String payment_mode, String date, String time, String status,String orderNo) {
+				// TODO Auto-generated method stub
+				
+				String cId = "";
+				String fixedTransactionId= "";
+				
+				try {
+					
+					Class.forName("org.sqlite.JDBC");
+					Connection con=DriverManager.getConnection( 
+							"jdbc:sqlite:./Database/lowes.db");  
+							Statement stmt=con.createStatement();  
+							
+							String select="select C_id from customer where Status=?";
+							prepStmt = con.prepareStatement(select);
+							prepStmt.setString(1,"active");
+							ResultSet rs2=prepStmt.executeQuery();
+							//Retrived database values are put into the variables and displaying				
+							while(rs2.next())
+							{
+								cId=rs2.getString("C_id").toString();
+								
+								System.out.println("C_ID: "+cId);
+							}
+							
+							
+							System.out.println(total+ payment_mode+ date+time+status+orderNo);
+							
+							String[] months = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+							Calendar gc = Calendar.getInstance();
+										
+							String orderId= gc.get(Calendar.YEAR)+months[gc.get(Calendar.MONTH)]+gc.get(Calendar.DATE)+gc.get(Calendar.HOUR)+gc.get(Calendar.MINUTE)+gc.get(Calendar.SECOND);
+							fixedTransactionId = orderId.toString();
+							
+							
+							prepStmt = con.prepareStatement("Insert into transaction_record(T_id,T_amount,Payment_mode,T_date,T_time,Status,Order_no,Customer_id) values(?,?,?,?,?,?,?,?)");
+							prepStmt.setString(1, fixedTransactionId);
+							prepStmt.setInt(2, total);
+							prepStmt.setString(3, payment_mode);
+							prepStmt.setString(4, date);
+							prepStmt.setString(5, time);
+							prepStmt.setString(6, status);
+							prepStmt.setString(7, orderNo);
+							prepStmt.setString(8, cId);
+							
+							int i = prepStmt.executeUpdate();
+							System.out.println(i+" record(s) inserted.");
+							
+							
+							prepStmt = con.prepareStatement("Update customer set Status=? where C_id=?");
+							prepStmt.setString(1,"inactive");
+							prepStmt.setString(2, cId);
+							int ii = prepStmt.executeUpdate();
+							System.out.println(ii+" record(s) updated.");
+							
+							
+				}
+				catch(Exception e) {
+					
+					System.out.println(e);
+				}
 				
 			}
 
