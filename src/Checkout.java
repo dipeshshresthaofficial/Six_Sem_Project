@@ -42,6 +42,7 @@ public class Checkout {
 	String cardNo="",cardExpDate="",cardCvv="";
 	String[] cardDetailsArr= new String[3];
 	String[] encryptedCardDetailsFromDbArr= new String[3];
+	String cId = "";
 	
 	PreparedStatement prepStmt=null; //This is for using bind variable concept for accessing values from database
 	
@@ -54,11 +55,11 @@ public class Checkout {
 	 * Launch the application.
 	 * @param string 
 	 */
-	public static void main(String username, int total, String orderId) {
+	public static void main(String string, int total, String orderId) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Checkout window = new Checkout(username,total, orderId);
+					Checkout window = new Checkout(string,total, orderId);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -73,8 +74,8 @@ public class Checkout {
 	 * @param total 
 	 * @param fixedOrderId 
 	 */
-	public Checkout(String username, int total, String orderNo) {
-		initialize(username,total,orderNo);
+	public Checkout(String string, int total, String orderNo) {
+		initialize(string,total,orderNo);
 	}
 
 	/**
@@ -83,7 +84,7 @@ public class Checkout {
 	 * @param total 
 	 * @param orderId 
 	 */
-	private void initialize(String username, int total, String orderNo) {
+	private void initialize(String string, int total, String orderNo) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 605, 379);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -102,7 +103,7 @@ public class Checkout {
 				
 			}
 		});
-		cardNoField.setBounds(198, 33, 321, 26);
+		cardNoField.setBounds(170, 33, 378, 26);
 		frame.getContentPane().add(cardNoField);
 		cardNoField.setColumns(10);
 		
@@ -169,7 +170,7 @@ public class Checkout {
 			private void storeTransaction(int total, String payment_mode, String date, String time, String status,String orderNo) {
 				// TODO Auto-generated method stub
 				
-				String cId = "";
+				
 				String fixedTransactionId= "";
 				
 				try {
@@ -278,13 +279,22 @@ public class Checkout {
 					"jdbc:sqlite:./Database/lowes.db");  
 					Statement stmt=con.createStatement();  
 					
-					String rs="insert into card_details (Card_no,Exp_date,Cvv,Cust_id) values(?,?,?,?)";
+					String rs="insert into card_details (Card_no,Exp_date,Cvv,Cust_id,Card_type_id) values(?,?,?,?,?)";
 					
 					prepStmt= con.prepareStatement(rs);
 					prepStmt.setString(1,a);
 					prepStmt.setString(2, b);
 					prepStmt.setString(3, c);
-					prepStmt.setString(4, username);
+					prepStmt.setString(4, cId);
+					
+					if(cardNo.charAt(0)=='5') {
+						prepStmt.setString(5, "M");
+					}
+					else {
+						
+						prepStmt.setString(5, "V");
+					}
+					
 					prepStmt.executeUpdate();
 					
 					con.close();  

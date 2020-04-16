@@ -30,11 +30,12 @@ public class Login {
 
 	private JFrame frame;
 	private JTextField mobileField;
-	String mobileEntered="";
-	String originalPwd = "admin";
+	
+	public static String mobileEntered;
+//	String originalPwd = "admin";
 	String dbFname="";
 	String dbMobileNo="";
-	String username="";
+	public static String username;
 	
 	PreparedStatement prepStmt=null; //This is for using bind variable concept for accessing values from database
 	boolean result;

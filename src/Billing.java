@@ -213,30 +213,11 @@ public class Billing {
 				c1.main("billCard",sum, fixedOrderId);
 			}
 		});
-		checkOutBtn.setBounds(80, 406, 163, 38);
+		checkOutBtn.setBounds(148, 406, 216, 38);
 		frame.getContentPane().add(checkOutBtn);
 		
 		
 		
-		JLabel paytmLogoLabel = new JLabel("");
-		paytmLogoLabel.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				
-				try {
-					  Desktop desktop = java.awt.Desktop.getDesktop();
-					  URI oURL = new URI("http://rknepal/");
-					  desktop.browse(oURL);
-					} catch (Exception e1) {
-					  e1.printStackTrace();
-					}
-			}
-		});
-		paytmLogoLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		Image img = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
-		Image modifiedImg = img.getScaledInstance(200, 220, java.awt.Image.SCALE_SMOOTH);
-		paytmLogoLabel.setIcon(new ImageIcon(modifiedImg));
-		paytmLogoLabel.setBounds(321, 375, 163, 83);
-		frame.getContentPane().add(paytmLogoLabel);
+		
 	}
 }

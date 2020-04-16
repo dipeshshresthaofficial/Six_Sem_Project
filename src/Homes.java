@@ -19,6 +19,7 @@ import java.time.LocalTime;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import javax.swing.JSeparator;
 
 public class Homes {
 
@@ -121,7 +122,7 @@ public class Homes {
 				System.out.println("HEllo");
 			}
 		});
-		profileLabelBtn.setBounds(209, 111, 64, 64);
+		profileLabelBtn.setBounds(210, 129, 64, 64);
 		frame.getContentPane().add(profileLabelBtn);
 		
 		JLabel paytmLabel = new JLabel("");
@@ -131,7 +132,7 @@ public class Homes {
 				
 				try {
 					  Desktop desktop = java.awt.Desktop.getDesktop();
-					  URI oURL = new URI("http://rknepal/");
+					  URI oURL = new URI("http://dipesh.paytm.pay/orders/create");
 					  desktop.browse(oURL);
 					} catch (Exception e1) {
 					  e1.printStackTrace();
@@ -143,8 +144,22 @@ public class Homes {
 		Image img1 = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
 		Image modifiedImg1 = img1.getScaledInstance(200, 220, java.awt.Image.SCALE_SMOOTH);
 		paytmLabel.setIcon(new ImageIcon(modifiedImg1));
-		paytmLabel.setBounds(162, 239, 180, 87);
+		paytmLabel.setBounds(174, 332, 180, 87);
 		frame.getContentPane().add(paytmLabel);
+		
+		JLabel transferMoneyLabel = new JLabel("Transfer Money");
+		transferMoneyLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		transferMoneyLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
+		transferMoneyLabel.setBounds(164, 262, 180, 25);
+		frame.getContentPane().add(transferMoneyLabel);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(0, 262, 488, 2);
+		frame.getContentPane().add(separator);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(0, 287, 488, 2);
+		frame.getContentPane().add(separator_1);
 		
 		
 		
@@ -160,7 +175,7 @@ public class Homes {
 			JLabel greetingLabel = new JLabel("Good Morning, "+dbFname+"!");
 			greetingLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
 			greetingLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			greetingLabel.setBounds(169, 150, 199, 36);
+			greetingLabel.setBounds(160, 70, 199, 36);
 			frame.getContentPane().add(greetingLabel);
 		}
 		else if(cur_time>=12 && cur_time<17){
@@ -168,7 +183,7 @@ public class Homes {
 			JLabel greetingLabel = new JLabel("Good Afternoon, "+dbFname+"!");
 			greetingLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
 			greetingLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			greetingLabel.setBounds(169, 70, 199, 36);
+			greetingLabel.setBounds(160, 70, 199, 36);
 			frame.getContentPane().add(greetingLabel);
 		}
 		else {
@@ -176,7 +191,7 @@ public class Homes {
 			JLabel greetingLabel = new JLabel("Good Evening, "+dbFname+"!");
 			greetingLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
 			greetingLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			greetingLabel.setBounds(169, 70, 199, 36);
+			greetingLabel.setBounds(160, 70, 199, 36);
 			frame.getContentPane().add(greetingLabel);
 		}
 		
