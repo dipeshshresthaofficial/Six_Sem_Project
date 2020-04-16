@@ -258,7 +258,8 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
     		System.out.println(itemName[2]);
     		System.out.println(itemQty[2]);
     		System.out.println(itemPrice[2]);
-    	
+    		
+    		
         	Billing b1=new Billing(a,itemId,itemName,itemQty,itemPrice);
         	b1.main(a,itemId,itemName,itemQty,itemPrice); 
         	

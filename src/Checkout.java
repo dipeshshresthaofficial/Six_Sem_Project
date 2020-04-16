@@ -33,7 +33,7 @@ import java.util.Calendar;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 
-public class Checkout {
+public class Checkout extends Homes {
 
 	private JFrame frame;
 	private JTextField cardNoField;
@@ -85,9 +85,15 @@ public class Checkout {
 	 * @param orderId 
 	 */
 	private void initialize(String string, int total, String orderNo) {
+		
+		String cardForAdding = this.cardForAdding;
+		System.out.println(cardForAdding);
+		System.out.println(string);
+		String dbFname= this.temp;
+		String username= this.temp;
 		frame = new JFrame();
 		frame.setBounds(100, 100, 605, 379);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JLabel cardNoLabel = new JLabel("Card Number");
@@ -149,21 +155,33 @@ public class Checkout {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
-					JOptionPane.showMessageDialog(null, "Please wait your payment is being validated....");
-					try {
-						Thread.sleep(250);
-					} catch (InterruptedException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+					if(string.equals(cardForAdding)) {
+						
+						JOptionPane.showMessageDialog(null, "Please press \"Add\" button for saving your card.");
+						
+					}else{
+												
+						
+						JOptionPane.showMessageDialog(null, "Please wait your payment is being validated....");
+						try {
+							Thread.sleep(250);
+						} catch (InterruptedException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						
+						JOptionPane.showMessageDialog(null, "Payment of " + total + " Successful for ORDER ID: "+orderNo+". Thank You!");		
+						
+						Calendar c = Calendar.getInstance();
+						
+						String date = c.get(Calendar.YEAR)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.DATE);
+						String time = c.get(Calendar.HOUR)+":"+c.get(Calendar.MINUTE)+":"+c.get(Calendar.SECOND);
+						
+//						Inserting the transaction record details in database
+						storeTransaction(total,"card", date, time,"success", orderNo);
+						
 					}
 					
-					JOptionPane.showMessageDialog(null, "Payment of " + total + " Successful for ORDER ID: "+orderNo+". Thank You!");		
-					
-					Calendar c = Calendar.getInstance();
-					
-					String date = c.get(Calendar.YEAR)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.DATE);
-					String time = c.get(Calendar.HOUR)+":"+c.get(Calendar.MINUTE)+":"+c.get(Calendar.SECOND);
-					storeTransaction(total,"card", date, time,"success", orderNo);
 				
 			}
 
@@ -239,7 +257,7 @@ public class Checkout {
 		frame.getContentPane().add(confirmBtn);
 		
 		//Encrypt function 
-		JButton encryptBtn = new JButton("Encrypt");
+		JButton encryptBtn = new JButton("Encrypt/ Add");
 		encryptBtn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {

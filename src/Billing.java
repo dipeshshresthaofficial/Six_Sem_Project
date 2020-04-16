@@ -24,11 +24,11 @@ import java.sql.Statement;
 import java.util.Calendar;
 import java.util.Random;
 
-public class Billing {
+public class Billing{
 	
 	private JFrame frame;
-	int sum=0;
-	String fixedOrderId = "";
+	public static int sum=0;
+	public static String fixedOrderId = "";
 	private JTextField billAmountField;
 	/**
 	 * Launch the application.
@@ -41,8 +41,9 @@ public class Billing {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Billing window = new Billing(a2,itemId,itemName,itemQty,itemPrice);
-					window.frame.setVisible(true);
+					Billing window2 = new Billing(a2,itemId,itemName,itemQty,itemPrice);
+//					System.out.println(window2.temp);
+					window2.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -201,7 +202,7 @@ public class Billing {
 		
 		JButton checkOutBtn = new JButton("Card Payment");
 		checkOutBtn.setForeground(Color.BLACK);
-		checkOutBtn.setFont(new Font("Tahoma", Font.BOLD, 18));
+		checkOutBtn.setFont(new Font("Tahoma", Font.BOLD, 14));
 		checkOutBtn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -209,15 +210,36 @@ public class Billing {
 				System.out.println(fixedOrderId);
 				storeOrder(itemId,itemName,itemQty,itemPrice);
 				
-				Checkout c1= new Checkout("billCard",sum, fixedOrderId);
+				frame.dispose();
+				Checkout c1= new Checkout("cardForPayment",sum, fixedOrderId);
 				c1.main("billCard",sum, fixedOrderId);
 			}
 		});
-		checkOutBtn.setBounds(148, 406, 216, 38);
+		checkOutBtn.setBounds(80, 408, 134, 38);
 		frame.getContentPane().add(checkOutBtn);
 		
 		
+		JLabel paytmLabel = new JLabel("");
+		paytmLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				try {
+					  Desktop desktop = java.awt.Desktop.getDesktop();
+					  URI oURL = new URI("http://dipesh.paytm.pay/orders/create");
+					  desktop.browse(oURL);
+					} catch (Exception e1) {
+					  e1.printStackTrace();
+					}
+			}
+		});
+		paytmLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
+		Image img1 = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
+		Image modifiedImg1 = img1.getScaledInstance(200, 220, java.awt.Image.SCALE_SMOOTH);
+		paytmLabel.setIcon(new ImageIcon(modifiedImg1));
+		paytmLabel.setBounds(280, 375, 180, 75);
+		frame.getContentPane().add(paytmLabel);
 		
 	}
 }

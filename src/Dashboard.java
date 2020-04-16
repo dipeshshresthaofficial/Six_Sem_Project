@@ -26,7 +26,7 @@ import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.Font;
 
-public class Dashboard {
+public class Dashboard extends Homes{
 
 	private JFrame frame;
 
@@ -40,6 +40,7 @@ public class Dashboard {
 			public void run() {
 				try {
 					Dashboard window = new Dashboard();
+//					System.out.println(window.temp);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -95,7 +96,7 @@ public class Dashboard {
 		custImgLabel.setBounds(100, 76, 491, 305);
 		frame.getContentPane().add(custImgLabel);
 		
-		JLabel lblNewLabel = new JLabel("Welcome to Lowes family!");
+		JLabel lblNewLabel = new JLabel(this.dbFname+", Avoid Queue, That Saves A Lot Of Time!");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(114, 21, 477, 48);

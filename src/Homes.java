@@ -21,19 +21,24 @@ import javax.swing.SwingConstants;
 import java.awt.Font;
 import javax.swing.JSeparator;
 
-public class Homes {
-
+public class Homes extends Login{
+	
+	public static String dbFname;
+	public static String username;
+	public static String cardForAdding= "cardForAdding";
 	private JFrame frame;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String username, String dbFname) {
+	public static void main() {
 		EventQueue.invokeLater(new Runnable() {
+
 			public void run() {
 				try {
-					Homes window = new Homes(username,dbFname);
-					window.frame.setVisible(true);
+					Homes window1 = new Homes();
+					System.out.println(window1.temp);
+					window1.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -43,11 +48,11 @@ public class Homes {
 
 	/**
 	 * Create the application.
-	 * @param dbFname 
-	 * @param username 
 	 */
-	public Homes(String username, String dbFname) {
-		initialize(username,dbFname);
+	public Homes() {
+		
+		initialize();
+		
 	}
 
 	
@@ -57,7 +62,11 @@ public class Homes {
 	 * @param dbFname 
 	 * @param username 
 	 */
-	private void initialize(String username, String dbFname) {
+	private void initialize() {
+		
+		System.out.println("hello"+this.temp);
+		dbFname= this.temp;
+		username= this.temp;
 		frame = new JFrame();
 		frame.setBounds(100, 100, 504, 502);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -72,12 +81,15 @@ public class Homes {
 		JMenu checkoutMenu = new JMenu("Checkout");
 		menuBar.add(checkoutMenu);
 		
+		
 		JMenuItem kmartMenuItem = new JMenuItem("K-Mart");
 		kmartMenuItem.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
+						
+						
 						Dashboard d1 = new Dashboard();
-						d1.main(null);		
+						d1.main(null);
 						
 			}
 		
@@ -101,11 +113,14 @@ public class Homes {
 		
 		JMenuItem cardPaymentMenuItem = new JMenuItem("Card Payment");
 		cardPaymentMenuItem.addMouseListener(new MouseAdapter() {
+			private char[] temp;
+
 			@Override
 			public void mousePressed(MouseEvent e) {
 				
-				Checkout c1 = new Checkout(username,0, dbFname);
-				c1.main(username,0,dbFname);
+//				System.out.println(this.temp);
+				Checkout c1 = new Checkout(cardForAdding,0, dbFname);
+				c1.main(cardForAdding,0,dbFname);
 			}
 		});
 		addMenu.add(cardPaymentMenuItem);

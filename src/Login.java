@@ -33,9 +33,10 @@ public class Login {
 	
 	public static String mobileEntered;
 //	String originalPwd = "admin";
-	String dbFname="";
+	public static String dbFname="";
 	String dbMobileNo="";
 	public static String username;
+	public static String temp;
 	
 	PreparedStatement prepStmt=null; //This is for using bind variable concept for accessing values from database
 	boolean result;
@@ -164,6 +165,7 @@ public class Login {
 						while(rs2.next())
 						{
 							username=rs2.getString("C_id").toString();
+							temp = username;
 							dbFname=rs2.getString("F_name");
 							String lname=rs2.getString("L_name");
 							dbMobileNo=rs2.getString("Mobile");
@@ -202,8 +204,8 @@ public class Login {
 						}
 						
 						frame.dispose();
-						Homes h1= new Homes(username,dbFname);
-						h1.main(username,dbFname);
+						Homes h1 = new Homes();
+						h1.main();
 					}
 					else {
 						 
