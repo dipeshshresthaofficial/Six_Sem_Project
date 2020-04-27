@@ -244,20 +244,20 @@ public class Menu extends javax.swing.JFrame implements Runnable, ThreadFactory 
             	        
         } while (System.currentTimeMillis() < end);
     	
-    		System.out.println(itemId[0]);
-    		System.out.println(itemName[0]);
-    		System.out.println(itemQty[0]);
-    		System.out.println(itemPrice[0]);
-
-    		System.out.println(itemId[1]);
-    		System.out.println(itemName[1]);
-    		System.out.println(itemQty[1]);
-    		System.out.println(itemPrice[1]);
-    		
-    		System.out.println(itemId[2]);
-    		System.out.println(itemName[2]);
-    		System.out.println(itemQty[2]);
-    		System.out.println(itemPrice[2]);
+//    		System.out.println(itemId[0]);
+//    		System.out.println(itemName[0]);
+//    		System.out.println(itemQty[0]);
+//    		System.out.println(itemPrice[0]);
+//
+//    		System.out.println(itemId[1]);
+//    		System.out.println(itemName[1]);
+//    		System.out.println(itemQty[1]);
+//    		System.out.println(itemPrice[1]);
+//    		
+//    		System.out.println(itemId[2]);
+//    		System.out.println(itemName[2]);
+//    		System.out.println(itemQty[2]);
+//    		System.out.println(itemPrice[2]);
     		
     		
         	Billing b1=new Billing(a,itemId,itemName,itemQty,itemPrice);

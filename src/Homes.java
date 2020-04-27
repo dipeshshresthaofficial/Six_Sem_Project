@@ -14,12 +14,19 @@ import javax.swing.JMenuItem;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URI;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.time.LocalTime;
 
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import javax.swing.JSeparator;
+import javax.swing.JTable;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Homes extends Login{
 	
@@ -27,6 +34,7 @@ public class Homes extends Login{
 	public static String username;
 	public static String cardForAdding= "cardForAdding";
 	private JFrame frame;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -68,7 +76,7 @@ public class Homes extends Login{
 		dbFname= this.temp;
 		username= this.temp;
 		frame = new JFrame();
-		frame.setBounds(100, 100, 504, 502);
+		frame.setBounds(100, 100, 504, 495);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -108,22 +116,52 @@ public class Homes extends Login{
 		});
 		checkoutMenu.add(moreMenuItem);
 		
-		JMenu addMenu = new JMenu("Add");
+		JMenu addMenu = new JMenu("Options");
 		menuBar.add(addMenu);
 		
-		JMenuItem cardPaymentMenuItem = new JMenuItem("Card Payment");
+		JMenuItem cardPaymentMenuItem = new JMenuItem("Add Card");
 		cardPaymentMenuItem.addMouseListener(new MouseAdapter() {
 			private char[] temp;
 
 			@Override
 			public void mousePressed(MouseEvent e) {
 				
+				
+				
 //				System.out.println(this.temp);
 				Checkout c1 = new Checkout(cardForAdding,0, dbFname);
 				c1.main(cardForAdding,0,dbFname);
 			}
 		});
+		
+
 		addMenu.add(cardPaymentMenuItem);
+		
+		JMenuItem transactionMenu = new JMenuItem("View Transactions");
+		transactionMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+
+				System.out.println("Showing Transactions");
+				TransactionRecords t = new TransactionRecords(username,"transactions");
+			}
+		});
+		
+		addMenu.add(transactionMenu);
+		
+		JMenuItem orderMenu = new JMenuItem("View Orders");
+		orderMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				System.out.println("Showing Orders");
+				TransactionRecords t = new TransactionRecords(username,"orders");
+			}
+		});
+		
+		addMenu.add(orderMenu);
+		
+		
+		
 		
 		JLabel profileLabelBtn = new JLabel("");
 		profileLabelBtn.setHorizontalAlignment(SwingConstants.CENTER);
@@ -141,19 +179,7 @@ public class Homes extends Login{
 		frame.getContentPane().add(profileLabelBtn);
 		
 		JLabel paytmLabel = new JLabel("");
-		paytmLabel.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				
-				try {
-					  Desktop desktop = java.awt.Desktop.getDesktop();
-					  URI oURL = new URI("http://dipesh.paytm.pay/orders/create");
-					  desktop.browse(oURL);
-					} catch (Exception e1) {
-					  e1.printStackTrace();
-					}
-			}
-		});
+		
 		paytmLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		Image img1 = new ImageIcon(this.getClass().getResource("/paytm-logo.png")).getImage();
@@ -175,6 +201,8 @@ public class Homes extends Login{
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setBounds(0, 287, 488, 2);
 		frame.getContentPane().add(separator_1);
+		
+		
 		
 		
 		
