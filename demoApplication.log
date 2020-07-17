@@ -5568,3 +5568,1088 @@ java.lang.IllegalStateException: Shutdown in progress
 [shutdown-hook-2] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
 [shutdown-hook-2] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
 [webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@42529fc0 is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@42529fc0 is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@20211b2b is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[frames-refresher-[0]] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Cancelling refresher
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@20211b2b is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7850ecf is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7850ecf is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@6a9b2770 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@2a2075a0 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@740c3f9a is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@6a9b2770 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@47acc22e is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@6ca973c6 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@86131e8 is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[frames-refresher-[0]] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Cancelling refresher
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@86131e8 is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@2a2075a0 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Not able to rewrite lock file
+java.io.FileNotFoundException: C:\Users\DIPESH~1\AppData\Local\Temp\.webcam-lock-601267183-tmp7295827347801960852 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.github.sarxos.webcam.WebcamLock.write(WebcamLock.java:184)
+	at com.github.sarxos.webcam.WebcamLock.update(WebcamLock.java:272)
+	at com.github.sarxos.webcam.WebcamLock.access$200(WebcamLock.java:25)
+	at com.github.sarxos.webcam.WebcamLock$LockUpdater.run(WebcamLock.java:57)
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Not able to rewrite lock file
+java.io.FileNotFoundException: C:\Users\DIPESH~1\AppData\Local\Temp\.webcam-lock-601267183-tmp7295827347801960852 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.github.sarxos.webcam.WebcamLock.write(WebcamLock.java:184)
+	at com.github.sarxos.webcam.WebcamLock.update(WebcamLock.java:272)
+	at com.github.sarxos.webcam.WebcamLock.access$200(WebcamLock.java:25)
+	at com.github.sarxos.webcam.WebcamLock$LockUpdater.run(WebcamLock.java:57)
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Not able to rewrite lock file
+java.io.FileNotFoundException: C:\Users\DIPESH~1\AppData\Local\Temp\.webcam-lock-601267183-tmp7295827347801960852 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.github.sarxos.webcam.WebcamLock.write(WebcamLock.java:184)
+	at com.github.sarxos.webcam.WebcamLock.update(WebcamLock.java:272)
+	at com.github.sarxos.webcam.WebcamLock.access$200(WebcamLock.java:25)
+	at com.github.sarxos.webcam.WebcamLock$LockUpdater.run(WebcamLock.java:57)
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Not able to rewrite lock file
+java.io.FileNotFoundException: C:\Users\DIPESH~1\AppData\Local\Temp\.webcam-lock-601267183-tmp7295827347801960852 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.github.sarxos.webcam.WebcamLock.write(WebcamLock.java:184)
+	at com.github.sarxos.webcam.WebcamLock.update(WebcamLock.java:272)
+	at com.github.sarxos.webcam.WebcamLock.access$200(WebcamLock.java:25)
+	at com.github.sarxos.webcam.WebcamLock$LockUpdater.run(WebcamLock.java:57)
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Webcam lock is broken - EOF when reading long variable from stream
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readFully(DataInputStream.java:202)
+	at java.base/java.io.DataInputStream.readLong(DataInputStream.java:421)
+	at com.github.sarxos.webcam.WebcamLock.read(WebcamLock.java:241)
+	at com.github.sarxos.webcam.WebcamLock.isLocked(WebcamLock.java:365)
+	at com.github.sarxos.webcam.WebcamLock.lock(WebcamLock.java:284)
+	at com.github.sarxos.webcam.Webcam.open(Webcam.java:289)
+	at com.github.sarxos.webcam.Webcam.open(Webcam.java:250)
+	at com.github.sarxos.webcam.Webcam.open(Webcam.java:236)
+	at com.github.sarxos.webcam.WebcamPanel$1.doInBackground(WebcamPanel.java:840)
+	at com.github.sarxos.webcam.WebcamPanel$1.doInBackground(WebcamPanel.java:833)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[SwingWorker-pool-1-thread-1] WARN  com.github.sarxos.webcam.WebcamLock  - Lock file C:\Users\DIPESH~1\AppData\Local\Temp\.webcam-lock-601267183 for Webcam HD WebCam 0 is broken - recreating it
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@740c3f9a is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@6ca973c6 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7e640e15 is now open
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-1] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7e9eb41c is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7e9eb41c is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-2] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-2] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0
+[AWT-EventQueue-0] INFO  com.github.sarxos.webcam.Webcam  - WebcamDefaultDriver capture driver will be used
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7db3c115 is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[SwingWorker-pool-1-thread-1] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[frames-refresher-[0]] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Cancelling refresher
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7db3c115 is now open
+[SwingWorker-pool-1-thread-3] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-5] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Closing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7db3c115 is now open
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamCloseTask  - Closing HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[SwingWorker-pool-1-thread-5] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[frames-refresher-[0]] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Cancelling refresher
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamLock  - Unlock Webcam HD WebCam 0
+[webcam-lock-[HD WebCam 0]] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock updater has been interrupted
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Webcam HD WebCam 0 has been closed
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.Webcam  - Setting new resolution 320x240
+[AWT-EventQueue-0] DEBUG com.github.sarxos.webcam.WebcamPanel  - Starting panel rendering and trying to open attached webcam
+[SwingWorker-pool-1-thread-7] DEBUG com.github.sarxos.webcam.WebcamLock  - Lock Webcam HD WebCam 0
+[atomic-processor-1] INFO  com.github.sarxos.webcam.ds.cgt.WebcamOpenTask  - Opening webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Opening webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device 0 starting session, size java.awt.Dimension[width=320,height=240]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device session started
+[atomic-processor-1] WARN  com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Different size obtained vs requested - [320x240] vs [640x360]. Setting correct one. New size is [640x360]
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Clear memory buffer
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Webcam device com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice@7db3c115 is now open
+[SwingWorker-pool-1-thread-7] DEBUG com.github.sarxos.webcam.Webcam  - Webcam is now open HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Searching devices
+[webcam-discovery-service] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDriver  - Found device HD WebCam 0
+[shutdown-hook-4] INFO  com.github.sarxos.webcam.WebcamShutdownHook  - Automatic HD WebCam 0 deallocation
+[shutdown-hook-4] INFO  com.github.sarxos.webcam.Webcam  - Disposing webcam HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Disposing webcam device HD WebCam 0
+[atomic-processor-1] DEBUG com.github.sarxos.webcam.ds.buildin.WebcamDefaultDevice  - Closing webcam device
+[shutdown-hook-4] DEBUG com.github.sarxos.webcam.WebcamPanel  - Stopping panel rendering and closing attached webcam
+[shutdown-hook-4] DEBUG com.github.sarxos.webcam.Webcam  - Webcam disposed HD WebCam 0

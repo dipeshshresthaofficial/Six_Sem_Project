@@ -77,6 +77,7 @@ public class Homes extends Login{
 		username= this.temp;
 		frame = new JFrame();
 		frame.setBounds(100, 100, 504, 495);
+		frame.setTitle("Home Page");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		

@@ -94,6 +94,7 @@ public class Checkout extends Homes {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 605, 379);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setTitle("Checkout Page");
 		frame.getContentPane().setLayout(null);
 		
 		JLabel cardNoLabel = new JLabel("Card Number");

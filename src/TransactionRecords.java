@@ -47,6 +47,7 @@ public class TransactionRecords {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setTitle("Transaction Page");
 		
 		
 		String transRecord[][]= new String[100][100];
@@ -55,9 +56,8 @@ public class TransactionRecords {
 		
 		if(record.equalsIgnoreCase("transactions")) {
 			
+
 			try {
-				
-				
 				Class.forName("org.sqlite.JDBC");  
 				Connection con=DriverManager.getConnection( 
 				"jdbc:sqlite:./Database/lowes.db");  
@@ -81,6 +81,7 @@ public class TransactionRecords {
 					i++;
 					
 				}
+				System.out.println(transRecord[0][0]);
 				
 				con.close();
 			}catch(Exception e1) {

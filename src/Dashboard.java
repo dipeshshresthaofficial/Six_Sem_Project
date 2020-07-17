@@ -63,6 +63,7 @@ public class Dashboard extends Homes{
 		frame = new JFrame();
 		frame.getContentPane().setForeground(Color.BLACK);
 		frame.setBounds(100, 100, 711, 497);
+		frame.setTitle("Shopping Mall Dashboard");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		

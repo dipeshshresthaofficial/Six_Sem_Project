@@ -60,37 +60,18 @@ public class Billing{
 	 */
 	public Billing(String[] a2, String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		
-		
-		initialize(a2,itemId,itemName,itemQty,itemPrice);
-		
+//		Function overloading on function ( initialize)
+		initialize(a2,itemId,itemName,itemQty,itemPrice); //initialize() with 5 parameters
+		initialize(itemId,itemName,itemQty,itemPrice); //initialize() with 4 parameters
 		
 	}
 
-	private void storeOrder(String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
+	private void initialize(String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
+		
 		// TODO Auto-generated method stub
 		PreparedStatement prepStmt=null;
 		String cId = "";
 		
-		
-		System.out.println("=======================================================================================");
-		System.out.println("=======================================================================================");
-		System.out.println("=======================================================================================");
-		System.out.println("=======================================================================================");
-		
-		System.out.println(itemId[0]);
-		System.out.println(itemName[0]);
-		System.out.println(itemQty[0]);
-		System.out.println(itemPrice[0]);
-		
-		System.out.println(itemId[1]);
-		System.out.println(itemName[1]);
-		System.out.println(itemQty[1]);
-		System.out.println(itemPrice[1]);
-		
-		System.out.println(itemId[2]);
-		System.out.println(itemName[2]);
-		System.out.println(itemQty[2]);
-		System.out.println(itemPrice[2]);
 		
 		try{  
 			Class.forName("org.sqlite.JDBC");  
@@ -161,8 +142,10 @@ public class Billing{
 	 */
 	private void initialize(String[] a2,String[] itemId, String[] itemName, int[] itemQty, int[] itemPrice) {
 		
+		System.out.println("RICO DON");
 		frame = new JFrame();
 		frame.setBounds(100, 100, 534, 508);
+		frame.setTitle("Billing Page");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -208,7 +191,7 @@ public class Billing{
 			public void mouseClicked(MouseEvent e) {
 				
 				System.out.println(fixedOrderId);
-				storeOrder(itemId,itemName,itemQty,itemPrice);
+				
 				
 				frame.dispose();
 				Checkout c1= new Checkout("cardForPayment",sum, fixedOrderId);
@@ -240,6 +223,8 @@ public class Billing{
 		paytmLabel.setIcon(new ImageIcon(modifiedImg1));
 		paytmLabel.setBounds(280, 375, 180, 75);
 		frame.getContentPane().add(paytmLabel);
+		
+		frame.setVisible(true);
 		
 	}
 }

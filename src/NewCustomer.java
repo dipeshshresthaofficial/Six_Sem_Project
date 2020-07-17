@@ -63,6 +63,7 @@ public class NewCustomer {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 455, 445);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setTitle("Register Page");
 		frame.getContentPane().setLayout(null);
 		
 		JLabel newCustFnameLabel = new JLabel("First Name:");
